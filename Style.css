@@ -1,0 +1,762 @@
+body{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0; 
+    border: 5px solid rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+img {
+    max-width: 100%;
+}
+
+.logo{
+    /*margin-top: 40px;
+    margin-bottom: 40px;*/
+    margin: 40px 0;
+    margin-bottom: 26px;
+    
+}
+
+.page-courante{
+   /* border-bottom: 5px solid;*/
+    margin-bottom: -5px;
+}
+.menu-principal{
+    border-bottom: 4px solid #eeeeee;
+    flex-direction: column;
+    display: flex;
+    
+    
+}
+.menu-principal li{
+    display: inline-block;
+    font-weight: bold;
+
+}
+.menu-principal a{
+    text-decoration: none;
+    /*text-decoration: underline;*/
+    color: black;
+    text-transform: uppercase;
+    /*text-transform: lowercase;*/
+    /*padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 14px;*/
+    padding: 17px 23px;
+    display:inline-block; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+.panorama {
+    background-image: url(http://static2.worldtempus.com/cache/article/tag-heuer/ambassadeurs/a/l/alec-monopoly-manufacture-cover_crop_w1396_h781_1396x781.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-shadow: 0 0 2px #eeeeee;
+    padding: 285px 0;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+.sous-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    padding-left: 0px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out, max-height .3s ease-in-out;
+    transform: translateY(-30px);
+}
+
+
+.has-submenu:hover .sous-menu{
+    opacity: 1;
+    max-height: 999px;
+    transform: translateY(0px);
+}
+
+.sous-menu li{
+    border-bottom: 1px solid white;
+}
+
+.sous-menu li::first-child{
+    border-top: none;
+}
+
+.sous-menu2{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.sous-menu2 li::first-child{
+    border-top: none;
+}
+.sous-menu2 li{
+    border-bottom: 1px solid white;
+
+}
+.has-submenu2:hover .sous-menu2{
+    display: flex;
+}
+
+.recherche{
+height: 19px;
+list-style-type: disc;
+padding-bottom: 17px;
+padding-left: 23px;
+padding-right: 23px;
+padding-top: 17px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.gallerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallerie article {
+    width: 50%;
+    background-size: cover;
+    height: 565px;
+    background-position: top center;
+}
+
+.img-al-middle {
+    background-position: center center;
+}
+
+.img-al-20perc {
+    background-position: center 20%;
+}
+
+.alec1{
+    background-image: url(https://static.lpnt.fr/images/2016/12/01/6357270lpmw-6357614-sommaire-626557228-jpg_3935094.jpg);
+}
+.alec2{
+    background-image: url(http://www.artnet.fr/WebServices/images/ll981458llgV6122CfDrCWBHBAD/alec-monopoly-khlomoney.jpg);
+}
+.alec3{
+    background-image: url(https://i.pinimg.com/originals/60/04/2f/60042f8ee220173e3604e9c218fbc208.png);
+    
+}
+.alec3 h2{
+    color: #ffffff;
+}
+
+.alec4{
+        background-image: url(https://d19mncec7m2zbr.cloudfront.net/content/medias/2019/07/25/5d39766f96b16-IMG_7827--Copy1.jpg);
+        
+}
+.alec5{
+    background-image: url(https://i.pinimg.com/originals/b3/1e/bb/b31ebb64c7f5bcaa4ea5c69f038613f2.jpg);
+}
+.alec6{
+    background-image: url(https://guyhepner.com/wp-content/uploads/2017/07/Beverly-Hills-Hotel-Neon-Sign-by-Alec-Monopoly.jpg);
+}
+
+@media (min-width: 1024px){
+    .menu-principal{flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.recherche{
+    height: 19px;
+    list-style-type: disc;
+    padding-bottom: 17px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 17px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+    .alec {
+        position: relative;
+    }
+    .alec p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.788);
+    border: solid 3px rgb(0, 0, 0);
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out, max-height .3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+    
+    }
+    .alec:hover p{
+        opacity: 1;
+    }
+    
+    .bio p{
+        /*text-align: left;
+        width: 50%;
+        opacity: 1;
+        background-color: #000000;
+        max-height: 999;
+        text-indent: 2em ;
+        line-height: 1.7em ;
+        width: 770px ;
+        margin: 0 auto ;
+        text-align: left ;
+        background: #fff ;
+        margin-top: 10%;*/
+         max-height: 999;
+         line-height: 1.7em ;
+         display: inline-block;
+         text-align: left;
+         position: relative;
+         -webkit-transition: all 100ms ease-in-out;
+         -webkit-transform: scale(1); 
+         -ms-transition: all 100ms ease-in-out;
+         -ms-transform: scale(1); 
+         -moz-transition: all 100ms ease-in-out;
+         -moz-transform: scale(1);
+         transition: all 100ms ease-in-out;
+         transform: scale(1);
+         width: 50%;
+         background-color: rgb(255, 255, 255);
+         padding: 50px;  
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         
+         
+         text-shadow: 0 0 1px #ffffff; 
+         background-repeat: no-repeat; 
+         background-color: #ffffff;
+         color: #000000;
+         
+         
+
+    
+    
+        .photobio{
+        margin-left: 1000px;
+        
+    }
+    .bio h2{ 
+        text-align: center;
+        line-height: 1.1em ;
+        margin: 0 auto;
+        display: inline-block;
+        background: #fff ;
+        margin-top: 7%;
+        border-bottom: 2px solid #000000;
+        margin-bottom: -5px;
+        font-size: 4em;
+        /*-webkit-text-stroke: 3px darkgrey;
+        -webkit-text-fill-color: white;
+        -webkit-animation: fill 0.5s infinite alternate;}
+      @-webkit-keyframes fill {
+        from { -webkit-text-fill-color: rgb(0, 0, 0); }
+        to { -webkit-text-fill-color: rgba(121, 132, 143, 0.705); }*/
+      }
+    
+.bio2 p{
+    max-height: 999;
+    line-height: 1.7em ;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    -webkit-transition: all 100ms ease-in-out;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 100ms ease-in-out;
+    -ms-transform: scale(1); 
+    -moz-transition: all 100ms ease-in-out;
+    -moz-transform: scale(1);
+    transition: all 100ms ease-in-out;
+    transform: scale(1);
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    background-image:url(https://www.plein.com/on/demandware.static/-/Library-Sites-philipp-plein-shared-library/default/dwe85f9444/landing_pages/alecxplein/sec_03_a.png);
+    text-shadow: 0 0 1px #ffffff; 
+    background-repeat: no-repeat; 
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.bio2 h3{ 
+    text-align: center;
+    width: 50%;
+    line-height: 1.1em ;
+    width: 400px ;
+    margin: 0 auto ;
+    background: #fff ;
+    margin-top: 7%;
+    border-bottom: 2px solid #000000;
+    margin-bottom: -5px;
+    font-size: 4em;
+    -webkit-text-stroke: 3px darkgrey;
+    -webkit-text-fill-color: white;
+    -webkit-animation: fill 0.5s infinite alternate;}
+  @-webkit-keyframes fill {
+    from { -webkit-text-fill-color: rgb(0, 0, 0); }
+    to { -webkit-text-fill-color: rgba(121, 132, 143, 0.705); }
+  }
+
+.photomarge{
+    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSudP4Q2kHoSaLDWDKblJuQLIkF13PDEmfXzDKw6Ih9DQ6c0cIZ9Q);
+    background-repeat: no-repeat;
+    background-size: 15% auto;
+    text-shadow: 0 0 2px #eeeeee;
+    padding: 100px 0;
+    font-size: 20px;
+    line-height: 40px;*/
+}
+.fa {
+    padding-top: 10px;
+    padding: 10px; 
+    border-radius: 50%;
+    margin: 0px auto 0;         /* margin négatif */
+    border:1px soli #fff);
+    /*font-size: 30px;*/
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+    background: #000000;
+    color: white;
+}
+.fa-facebook {
+    background: rgb(255, 255, 255);
+    color: white;
+  }
+  .fa-instagram {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  .fa-twitter {
+    background: #ffffff;
+    color: white;
+  }
+
+footer {
+    padding: 2px;
+    background: rgba(37, 126, 178, 0.582);
+    display: block;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: baseline;
+    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvigx7DKTWq7TfTmYHtAVCmb23wvRUIuyR4mpE_RzDa83rS0ka);
+    background-repeat: no-repeat;*/
+}
+.container{
+    margin: 0 10%;
+    list-style: none;
+    
+}
+  
+.footer-title {
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 1,5;
+    font-size: 100%;
+    text-align: left; 
+    text-decoration: underline;   
+}
+footer ul{
+    display: inline-block;
+    padding: 1px 0;
+    line-height: 2;
+    font-size: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    list-style: none;
+    }
+
+    footer .flex {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+.toto2{
+    width: 100%;
+    text-align: center;
+}
+.toto3{
+    width: 100%;
+    text-align: center;
+}
+.toto4{
+    width: 100%;
+    text-align: center;
+}
+.toto5{
+    width: 100%;
+    text-align: center;
+}
+
+.mention{
+font-weight: 400;
+color: #000;
+display: block;
+vertical-align: text-top;
+font-size: 100%;
+text-align: left;
+flex-direction: column;
+display: flex;
+text-decoration: underline;
+border-left: solid 1px white;
+}
+      
+.social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.social.instagram {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/social-network-24/512/Instagram-512.png);
+    background-size: 150% auto;
+}
+
+.social.facebook {
+    background-image: url(https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png);
+}
+
+.social.twitter {
+    background-image: url(https://i0.wp.com/dragonsniortais.fr/wp-content/uploads/2019/04/logo-twitter-circle-png-transparent-image-1.png?ssl=1);
+}
+
+.social.youtube {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/social-networks-and-media-flat-icons/136/Social_Media_Socialmedia_network_share_socialnetwork_network-31-512.png);
+    background-size: 150% auto;
+
+}
+
+.flex.twocols > * {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.flex.twocols > *:nth-child(even) {
+    border-left: solid 1px white;
+    padding-left: 20px;
+
+}
+
+.footer-border-bottom {
+    border-bottom: 3px solid #eeeeee;
+    margin-bottom: 2px;
+}
+.soso{
+    text-align: center;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.flex.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex.flex-align-item-baseline {
+    align-items: baseline;
+}
+
+/*.photofooter{
+    margin-left: auto;
+    margin-right: auto; 
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+    display: block;
+    vertical-align: text-top;
+    font-size: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;*/
+}
+
+* PAGE CONTACT *
+form {
+    /* Uniquement centrer le formulaire sur la page */
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #000000
+  }
+  
+form div + div {
+    margin-top: 1em;
+}
+  
+label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+    font: 1em sans-serif;
+  
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 0,5px solid #999;
+  }
+  
+input:focus, textarea:focus {
+    /* Pour souligner légèrement les éléments actifs */
+    border-color: #000;
+  }
+  
+textarea {
+    /* Pour aligner les champs texte multi ligne avec leur étiquette */
+    vertical-align: top;
+  
+    /* Pour donner assez de place pour écrire du texte */
+    height: 5em;
+  }
+  
+.button {
+    /* Pour placer le bouton à la même position que les champs texte */
+    padding-left: 90px; /* même taille que les étiquettes */
+  }
+  
+button {
+    /* Cette marge supplémentaire représente grosso modo le même espace que celui
+       entre les étiquettes et les champs texte */
+    margin-left: .5em;
+  }
+.contact{
+    text-align: center;
+    padding-left: 45px;
+
+}
+.legal{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+/*-----galery------*/
+
+.hello {
+    opacity: 1 !important;
+  }
+  .full {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .full .content {
+    background-color: rgba(0,0,0,0.75) !important;
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
+  .full .content img {
+    left: 50%;
+    transform: translate3d(0, 0, 0);
+    animation: zoomin 1s ease;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+  .byebye {
+    opacity: 0;
+  }
+  .byebye:hover {
+    transform: scale(0.2) !important;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: center;
+}
+  .gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+  }
+  .gallery img:hover {
+    box-shadow: 0 0 32px #333;
+  }
+  .gallery .content {
+    padding: 4px;
+  }
+  .gallery .gallery-item {
+    transition: grid-row-start 300ms linear;
+    transition: transform 300ms ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .gallery .gallery-item:hover {
+    transform: scale(1.025);
+  }
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+  }
+  @media (max-width: 400px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+  }
+  @-moz-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  @-webkit-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  @-o-keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes zoomin {
+    0% {
+      max-width: 50%;
+      transform: rotate(-30deg);
+      filter: blur(4px);
+    }
+    30% {
+      filter: blur(4px);
+      transform: rotate(-80deg);
+    }
+    70% {
+      max-width: 50%;
+      transform: rotate(45deg);
+    }
+    100% {
+      max-width: 100%;
+      transform: rotate(0deg);
+    }
+  }
+  .galery-item-container{
+      width: 25%;
+
+  }
+  .galery-item-container img{
+      max-width: 250px;
+      width: 100%;
+      max-height: 400px;
+ }
+
+ h1{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: rgba(37, 126, 178, 0.582);
+     font-weight: 900;
+     font-size: 3.5em;
+    }
+    .ml15 {
+        font-weight: 800;
+        font-size: 3.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        text-align: center;
+      }
+      
+      .ml15 .word {
+        display: inline-block;
+        line-height: 1em;
+        margin-left: 0.5em;
+      }
+
+
